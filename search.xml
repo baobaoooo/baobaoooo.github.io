@@ -1,11 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>代码块的演示</title>
+    <url>/2024/02/01/%E4%BB%A3%E7%A0%81%E5%9D%97%E6%BC%94%E7%A4%BA/show/</url>
+    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">fuction a () &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>css学习笔记</title>
+    <url>/2024/02/01/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h1>博主的前端学习笔记(css)</h1>
+<h2>css语法规范</h2>
+选择器+声明（声明包括属性和值）
+<h2>css基础选择器</h2>
+**div**<br>
+是一个存储网页的盒子，可以通过css定义高度、宽度、背景颜色
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标签选择器：使用标签选择需要更改的样式</span><br><span class="line">类选择器：①使用标签中的 class 选择需要改变的样式</span><br><span class="line">        ②一个标签可以有多个class属性，但要使用空格分开</span><br></pre></td></tr></table></figure>
+]]></content>
+  </entry>
+  <entry>
     <title>html学习笔记</title>
     <url>/2024/02/01/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h1>博主的前端学习笔记(html)</h1>
-
-<h2>文本格式化标签</h2>
+    <content><![CDATA[<h2>文本格式化标签</h2>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;strong&gt;加粗，&lt;em&gt;倾斜，&lt;del&gt;删除线，&lt;ins&gt;下划线</span><br></pre></td></tr></table></figure>
 <h2>常用标签</h2>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;和&lt;span&gt;,属于一个‘盒子’，用来装内容div,division是分割、分区的意思，span是跨度的意思，div独占一行而span一行可以有多个</span><br></pre></td></tr></table></figure>
@@ -27,11 +43,16 @@
 <h2>列表标签</h2>
 使用目的：用来布局，整齐简洁
 <h3>无序列表</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>代码块的演示</title>
-    <url>/2024/02/01/%E4%BB%A3%E7%A0%81%E5%9D%97%E6%BC%94%E7%A4%BA/show/</url>
-    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">fuction a () &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父标签&lt;ul&gt;</span><br><span class="line"> 子标签&lt;li&gt;</span><br></pre></td></tr></table></figure>
+<h3>有序列表</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父标签&lt;ol&gt;</span><br><span class="line"> 子标签&lt;li&gt;</span><br></pre></td></tr></table></figure>
+<h3>自定义列表</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一个大标题和几个小标题的形式</span><br><span class="line">父标签&lt;dl&gt;</span><br><span class="line">    子标签&lt;dt&gt;(大标题)</span><br><span class="line">    子标签&lt;dd&gt;(小标题)</span><br></pre></td></tr></table></figure>
+<h2>表单标签</h2>
+由表单域、表单控件和提示信息三部分组成
+<h3>表单域</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;form&gt; 将表单信息送到指定地址</span><br><span class="line">    属性：action=“url”后台地址</span><br><span class="line">         method 方法</span><br><span class="line">         name 表单名字</span><br></pre></td></tr></table></figure>
+<h3>表单控件（元素）</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;input&gt; 输入操作 type属性值不同有不同的操作</span><br><span class="line">  &lt;label&gt;标签（不属于表单但经常与表单搭配使用） 标签中的for和input的id属性相同</span><br><span class="line">&lt;select&gt; 下拉表单元素 属性selected=”selected“表示默认选中</span><br><span class="line">&lt;textarea&gt; 超大型的文本框，用于留言，反馈</span><br><span class="line">    cols 表示一行多少字；</span><br><span class="line">    rows 表示可以写多少行</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
 </search>
