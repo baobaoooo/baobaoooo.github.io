@@ -1,6 +1,43 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>html学习笔记</title>
+    <url>/2024/02/01/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2>文本格式化标签</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;strong&gt;加粗，&lt;em&gt;倾斜，&lt;del&gt;删除线，&lt;ins&gt;下划线</span><br></pre></td></tr></table></figure>
+<h2>常用标签</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;和&lt;span&gt;,属于一个‘盒子’，用来装内容div,division是分割、分区的意思，span是跨度的意思，div独占一行而span一行可以有多个</span><br></pre></td></tr></table></figure>
+<h2>图像标签</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">写法&lt;img src=&#x27;图像URL&#x27;/&gt;</span><br><span class="line"></span><br><span class="line">属性：alt 替换文本，图片无法显示时的文字，</span><br><span class="line">    title 提示文本，师表放到图像上显示的文字</span><br><span class="line">    width 图像的宽度，以像素为单位</span><br><span class="line">    height 图像高度</span><br><span class="line">    border 给图像设定边框（一般通过CSS设定）</span><br></pre></td></tr></table></figure>
+<h2>超链接标签</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">外部链接</span><br><span class="line"> &lt;a href=&#x27;跳转URL&#x27;&gt;</span><br><span class="line"> 属性：target 目标窗口打开方式，_self 当前窗口打开，_blank 新窗口打开</span><br><span class="line">内部链接</span><br><span class="line"> 属于同一个网站的网页互相访问</span><br><span class="line">空连接</span><br><span class="line"> 使用‘#’代替href的值</span><br><span class="line">下载链接</span><br><span class="line"> gref链接向zip等文件</span><br><span class="line">网页元素链接</span><br><span class="line"> &lt;a href=&quot;https://www.baidu.com&quot;&gt;&lt;img src=&quot;img.jpg&quot;&gt;&lt;/a&gt;</span><br><span class="line"> 实现点击图片跳转百度</span><br><span class="line">锚点链接</span><br><span class="line"> 点击链接快速定位到页面某个位置</span><br><span class="line"> &lt;a href=&quot;#two&quot;&gt;two的位置&lt;/a&gt;</span><br><span class="line"> &lt;h3 id=&quot;two&quot;&gt;跳转到这里&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
+<h2>HTML的注释标签</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--注释--&gt;</span><br></pre></td></tr></table></figure>
+<h2>HTML的特殊字符</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&amp;nbsp 空格;</span><br><span class="line">&amp;lt 小于;   </span><br><span class="line">&amp;gt 大于;</span><br></pre></td></tr></table></figure>
+<h2>表格标签</h2>
+<g>主要作用：显示、展示数据</g>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;table&gt;最大的父标签</span><br><span class="line"> &lt;thead&gt;（存放表格属性）和&lt;tbody&gt;（存放数据主题）划分表格的头部区域和表格的主体部分</span><br><span class="line">  &lt;tr&gt;定义表格中的行，table的子标签</span><br><span class="line">   &lt;td&gt;定义表格中的单元格，tr的子标签</span><br><span class="line">   &lt;th&gt;定义表格的表头，tr的子标签，通常会加粗居中显示</span><br></pre></td></tr></table></figure>
+<h3>表格属性(通常在CSS中设置)</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">align：表格的位置属性，center、left、right</span><br><span class="line">border：规定表格是否有边框，&quot;1&quot;有边框，&quot;&quot;默认值表示无边框</span><br><span class="line">cellpadding 字和边框的距离</span><br><span class="line">cellspacing 单元格和单元格的距离</span><br><span class="line">width 规定表格的宽度</span><br><span class="line">height 规定表格的高度</span><br></pre></td></tr></table></figure>
+<h3>合并单元格</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">rowspan 跨行合并 标签在所有合并单元格的最上面一个单元格中注明</span><br><span class="line">colspan 跨列合并 标签在所有合并单元格的最左边的一个单元格中注明</span><br></pre></td></tr></table></figure>
+<h2>列表标签</h2>
+使用目的：用来布局，整齐简洁
+<h3>无序列表</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父标签&lt;ul&gt;</span><br><span class="line"> 子标签&lt;li&gt;</span><br></pre></td></tr></table></figure>
+<h3>有序列表</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父标签&lt;ol&gt;</span><br><span class="line"> 子标签&lt;li&gt;</span><br></pre></td></tr></table></figure>
+<h3>自定义列表</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一个大标题和几个小标题的形式</span><br><span class="line">父标签&lt;dl&gt;</span><br><span class="line">    子标签&lt;dt&gt;(大标题)</span><br><span class="line">    子标签&lt;dd&gt;(小标题)</span><br></pre></td></tr></table></figure>
+<h2>表单标签</h2>
+由表单域、表单控件和提示信息三部分组成
+<h3>表单域</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;form&gt; 将表单信息送到指定地址</span><br><span class="line">    属性：action=“url”后台地址</span><br><span class="line">         method 方法</span><br><span class="line">         name 表单名字</span><br></pre></td></tr></table></figure>
+<h3>表单控件（元素）</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;input&gt; 输入操作 type属性值不同有不同的操作</span><br><span class="line">  &lt;label&gt;标签（不属于表单但经常与表单搭配使用） 标签中的for和input的id属性相同</span><br><span class="line">&lt;select&gt; 下拉表单元素 属性selected=”selected“表示默认选中</span><br><span class="line">&lt;textarea&gt; 超大型的文本框，用于留言，反馈</span><br><span class="line">    cols 表示一行多少字；</span><br><span class="line">    rows 表示可以写多少行</span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
     <title>css学习笔记</title>
     <url>/2024/02/01/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1>博主的前端学习笔记(css)</h1>
@@ -53,42 +90,5 @@
 <h2>选择框实例练习</h2>
 
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a&gt;手机 电话卡&lt;/a&gt;</span><br><span class="line">&lt;a&gt;电视 盒子&lt;/a&gt;</span><br><span class="line">&lt;a&gt;笔记本 平板&lt;/a&gt;</span><br><span class="line">&lt;a&gt;出行 穿戴&lt;/a&gt;</span><br><span class="line">&lt;a&gt;智能 路由器&lt;/a&gt;</span><br><span class="line">&lt;a&gt;健康 儿童&lt;/a&gt;</span><br><span class="line">&lt;a&gt;耳机 音响&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">a &#123;</span><br><span class="line">    text-indent: 2em;</span><br><span class="line">    color: #fff;</span><br><span class="line">    background-color: #55585a;</span><br><span class="line">    display: block;</span><br><span class="line">    width: 230px;</span><br><span class="line">    height: 40px;</span><br><span class="line">    font-size: 14px;</span><br><span class="line">    text-decoration: none;</span><br><span class="line">&#125;</span><br><span class="line">a:hover &#123;</span><br><span class="line">    background-color: #ff6700;</span><br><span class="line">    text-decoration: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
-    <title>html学习笔记</title>
-    <url>/2024/02/01/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2>文本格式化标签</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;strong&gt;加粗，&lt;em&gt;倾斜，&lt;del&gt;删除线，&lt;ins&gt;下划线</span><br></pre></td></tr></table></figure>
-<h2>常用标签</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;和&lt;span&gt;,属于一个‘盒子’，用来装内容div,division是分割、分区的意思，span是跨度的意思，div独占一行而span一行可以有多个</span><br></pre></td></tr></table></figure>
-<h2>图像标签</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">写法&lt;img src=&#x27;图像URL&#x27;/&gt;</span><br><span class="line"></span><br><span class="line">属性：alt 替换文本，图片无法显示时的文字，</span><br><span class="line">    title 提示文本，师表放到图像上显示的文字</span><br><span class="line">    width 图像的宽度，以像素为单位</span><br><span class="line">    height 图像高度</span><br><span class="line">    border 给图像设定边框（一般通过CSS设定）</span><br></pre></td></tr></table></figure>
-<h2>超链接标签</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">外部链接</span><br><span class="line"> &lt;a href=&#x27;跳转URL&#x27;&gt;</span><br><span class="line"> 属性：target 目标窗口打开方式，_self 当前窗口打开，_blank 新窗口打开</span><br><span class="line">内部链接</span><br><span class="line"> 属于同一个网站的网页互相访问</span><br><span class="line">空连接</span><br><span class="line"> 使用‘#’代替href的值</span><br><span class="line">下载链接</span><br><span class="line"> gref链接向zip等文件</span><br><span class="line">网页元素链接</span><br><span class="line"> &lt;a href=&quot;https://www.baidu.com&quot;&gt;&lt;img src=&quot;img.jpg&quot;&gt;&lt;/a&gt;</span><br><span class="line"> 实现点击图片跳转百度</span><br><span class="line">锚点链接</span><br><span class="line"> 点击链接快速定位到页面某个位置</span><br><span class="line"> &lt;a href=&quot;#two&quot;&gt;two的位置&lt;/a&gt;</span><br><span class="line"> &lt;h3 id=&quot;two&quot;&gt;跳转到这里&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
-<h2>HTML的注释标签</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--注释--&gt;</span><br></pre></td></tr></table></figure>
-<h2>HTML的特殊字符</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&amp;nbsp 空格;</span><br><span class="line">&amp;lt 小于;   </span><br><span class="line">&amp;gt 大于;</span><br></pre></td></tr></table></figure>
-<h2>表格标签</h2>
-<g>主要作用：显示、展示数据</g>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;table&gt;最大的父标签</span><br><span class="line"> &lt;thead&gt;（存放表格属性）和&lt;tbody&gt;（存放数据主题）划分表格的头部区域和表格的主体部分</span><br><span class="line">  &lt;tr&gt;定义表格中的行，table的子标签</span><br><span class="line">   &lt;td&gt;定义表格中的单元格，tr的子标签</span><br><span class="line">   &lt;th&gt;定义表格的表头，tr的子标签，通常会加粗居中显示</span><br></pre></td></tr></table></figure>
-<h3>表格属性(通常在CSS中设置)</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">align：表格的位置属性，center、left、right</span><br><span class="line">border：规定表格是否有边框，&quot;1&quot;有边框，&quot;&quot;默认值表示无边框</span><br><span class="line">cellpadding 字和边框的距离</span><br><span class="line">cellspacing 单元格和单元格的距离</span><br><span class="line">width 规定表格的宽度</span><br><span class="line">height 规定表格的高度</span><br></pre></td></tr></table></figure>
-<h3>合并单元格</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">rowspan 跨行合并 标签在所有合并单元格的最上面一个单元格中注明</span><br><span class="line">colspan 跨列合并 标签在所有合并单元格的最左边的一个单元格中注明</span><br></pre></td></tr></table></figure>
-<h2>列表标签</h2>
-使用目的：用来布局，整齐简洁
-<h3>无序列表</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父标签&lt;ul&gt;</span><br><span class="line"> 子标签&lt;li&gt;</span><br></pre></td></tr></table></figure>
-<h3>有序列表</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父标签&lt;ol&gt;</span><br><span class="line"> 子标签&lt;li&gt;</span><br></pre></td></tr></table></figure>
-<h3>自定义列表</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一个大标题和几个小标题的形式</span><br><span class="line">父标签&lt;dl&gt;</span><br><span class="line">    子标签&lt;dt&gt;(大标题)</span><br><span class="line">    子标签&lt;dd&gt;(小标题)</span><br></pre></td></tr></table></figure>
-<h2>表单标签</h2>
-由表单域、表单控件和提示信息三部分组成
-<h3>表单域</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;form&gt; 将表单信息送到指定地址</span><br><span class="line">    属性：action=“url”后台地址</span><br><span class="line">         method 方法</span><br><span class="line">         name 表单名字</span><br></pre></td></tr></table></figure>
-<h3>表单控件（元素）</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;input&gt; 输入操作 type属性值不同有不同的操作</span><br><span class="line">  &lt;label&gt;标签（不属于表单但经常与表单搭配使用） 标签中的for和input的id属性相同</span><br><span class="line">&lt;select&gt; 下拉表单元素 属性selected=”selected“表示默认选中</span><br><span class="line">&lt;textarea&gt; 超大型的文本框，用于留言，反馈</span><br><span class="line">    cols 表示一行多少字；</span><br><span class="line">    rows 表示可以写多少行</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
 </search>
