@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>代码块的演示</title>
-    <url>/2024/02/01/%E4%BB%A3%E7%A0%81%E5%9D%97%E6%BC%94%E7%A4%BA/show/</url>
-    <content><![CDATA[<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">fuction a () &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&quot;hello world!&quot;</span>)</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
-  </entry>
-  <entry>
     <title>css学习笔记</title>
     <url>/2024/02/01/CSS%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/css%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
     <content><![CDATA[<h1>博主的前端学习笔记(css)</h1>
@@ -15,8 +10,49 @@
 **div**<br>
 是一个存储网页的盒子，可以通过css定义高度、宽度、背景颜色
 
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标签选择器：使用标签选择需要更改的样式</span><br><span class="line">类选择器：①使用标签中的 class 选择需要改变的样式</span><br><span class="line">        ②一个标签可以有多个class属性，但要使用空格分开</span><br></pre></td></tr></table></figure>
-]]></content>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">标签选择器：使用标签选择需要更改的样式</span><br><span class="line">类选择器：①使用标签中的 class 选择需要改变的样式</span><br><span class="line">        ②一个标签可以有多个class属性，但要使用空格分开</span><br><span class="line">        ③用&quot;.&quot;来开头</span><br><span class="line">id选择器：①使用&quot;#&quot;开头</span><br><span class="line">   id选择器和类选择器的区别：样式用类调用，结构（div）用id调用，且id只能调用一次。</span><br><span class="line">通配符选择器：“*” 代表选择所有标签</span><br></pre></td></tr></table></figure>
+
+
+<h2>css字体属性</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">front-family 设置文本字体</span><br><span class="line">front-size 设置字体大小 标题标签特殊，一般需要单独指定文字大小</span><br><span class="line">front-weight 设置字体粗细</span><br><span class="line">front-style 设置字体样式 italic 斜体、normal 取消倾斜</span><br><span class="line">使用front</span><br><span class="line">这四个属性可以合并简写 顺序是 front-style front-weight front-size front-family</span><br><span class="line">前两个属性可以省略</span><br></pre></td></tr></table></figure>
+
+<h2>css文本你属性</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">文本颜色 color</span><br><span class="line">对齐文本 text-akugn 属性 center left right</span><br><span class="line">装饰文本 text-decoration </span><br><span class="line">文本缩进 em（单位）表示当前段落的字体大小</span><br><span class="line">行间距 line-height </span><br></pre></td></tr></table></figure>
+
+<h2>css的引入方式</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">行内样式表 直接在标签内部设置</span><br><span class="line">内部样式表 &lt;style&gt; 标签</span><br><span class="line">外部样式表 &lt;link rel=&#x27;stylesheet&#x27; href=&#x27;style.css&#x27;&gt;</span><br></pre></td></tr></table></figure>
+<h2>Emmet语法</h2>
+<h3>快速生成html标签</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">div*10 生成是个div标签</span><br><span class="line">div+tab 生成一个div标签</span><br><span class="line">ul&gt;li 生成父子级的标签</span><br><span class="line">div+p 生成兄弟子集的标签</span><br><span class="line">标签名.nav 生成类名为nav的标签</span><br><span class="line">标签名#nav 生成id为nav的标签</span><br><span class="line">使用$符号，生成的标签序号递增</span><br><span class="line">如果想要标签中生成内容，将内容放入大括号中</span><br></pre></td></tr></table></figure>
+<h3>快速生成CSS样式</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">样式可以缩写，快速布置</span><br><span class="line">如 tac 表示 文本居中</span><br></pre></td></tr></table></figure>
+<h2>复合选择器</h2>
+有多个基础选择器构成复合选择器
+<h3>后代选择器</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">会把最大标签下的指定标签都选择出来（包括儿子和孙子）</span><br><span class="line">ol li &#123;...&#125; 只改变选 ol 的后代 li 的样式</span><br></pre></td></tr></table></figure>
+<h3>子元素选择器</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">元素1 &gt; 元素2 &#123;...&#125; 只选择元素1的亲儿子元素2</span><br></pre></td></tr></table></figure>
+<h3>并集选择器</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">元素1 , 元素2 &#123;...&#125; 元素1和元素2同时改变   样式</span><br></pre></td></tr></table></figure>
+<h3>链接伪类选择器</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">a:link 未访问的链接</span><br><span class="line">a:visited 访问过的链接</span><br><span class="line">a:hover 鼠标移动到其上的链接</span><br><span class="line">a:active 鼠标按下未弹起的链接</span><br><span class="line">注意事项：①按照 link visited hover active 的顺序声明</span><br><span class="line">        ②开发一般只用 a:hover 的样式更改</span><br></pre></td></tr></table></figure>
+<h3>focus伪类选择器</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">input:focus 把获得光标到input表单元素选择出来</span><br><span class="line">可以改变 color 和 background-color</span><br></pre></td></tr></table></figure>
+
+<h2>CSS的元素显示模式</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">独占一行使用块元素 &lt;div&gt; &lt;h1&gt;~&lt;h6&gt; &lt;p&gt; &lt;ul&gt; &lt;ol&gt; &lt;li&gt;</span><br><span class="line">    特点：块元素不能互相嵌套，&lt;p&gt;标签中不能放&lt;div&gt;标签；可以设置宽度和高度</span><br><span class="line">一行有多个布局使用行内元素 &lt;span&gt; &lt;a&gt; &lt;strong&gt; &lt;em&gt; &lt;del&gt;</span><br><span class="line">    特例: &lt;a&gt; 里面可以放块级元素；无法设置宽度和高度</span><br><span class="line">行内快元素：&lt;img&gt;、&lt;input&gt;、&lt;td&gt; 一行可以放多个块元素0.</span><br></pre></td></tr></table></figure>
+显示模式的转换：行内元素转换成块级元素 display:block<br>
+<p class="a">块内元素转换成行内元素 display:inline</p>
+<p class="a">转换成行内块元素 display:inline</p>
+<style>
+.a{
+    text-indent: 8em;
+}
+</style>
+
+<h2>选择框实例练习</h2>
+
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;a&gt;手机 电话卡&lt;/a&gt;</span><br><span class="line">&lt;a&gt;电视 盒子&lt;/a&gt;</span><br><span class="line">&lt;a&gt;笔记本 平板&lt;/a&gt;</span><br><span class="line">&lt;a&gt;出行 穿戴&lt;/a&gt;</span><br><span class="line">&lt;a&gt;智能 路由器&lt;/a&gt;</span><br><span class="line">&lt;a&gt;健康 儿童&lt;/a&gt;</span><br><span class="line">&lt;a&gt;耳机 音响&lt;/a&gt;</span><br><span class="line"></span><br><span class="line">&lt;style&gt;</span><br><span class="line">a &#123;</span><br><span class="line">    text-indent: 2em;</span><br><span class="line">    color: #fff;</span><br><span class="line">    background-color: #55585a;</span><br><span class="line">    display: block;</span><br><span class="line">    width: 230px;</span><br><span class="line">    height: 40px;</span><br><span class="line">    font-size: 14px;</span><br><span class="line">    text-decoration: none;</span><br><span class="line">&#125;</span><br><span class="line">a:hover &#123;</span><br><span class="line">    background-color: #ff6700;</span><br><span class="line">    text-decoration: none;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
     <title>html学习笔记</title>
