@@ -89,32 +89,30 @@ margin 的简写和 padding 相同
 
 <p>使用外边距让块级盒子水平居中<br>    ①盒子必须指定宽度（width）<br>    ②盒子左右的外边距都设置为 auto<br> 注意：让行内快元素和行内元素居中对齐的方法是 text-align: center</p>
 <p>外边距合并情况：<br>  对于两个嵌套的快元素，当父子元素均有外边距，就会出现塌陷问题<br>  解决方案：①为父元素定义上边框<br>          ②为父元素定义上内边距<br>          ③为父元素添加 overflow:hidden</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h4&gt;清除网页元素的内外边距&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;h4&gt;清除网页元素的内外边距&lt;/h4&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>不同的浏览器有不同内外边距，所以要清除</p>
 <ul>
 <li>{<br>margin: 0;<br>padding: 0;</li>
 </ul>
 <p>}<br>**注意：为了照顾兼容性，尽量只设置左右内外边距，</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h3&gt;新增样式&lt;/h3&gt;</span><br><span class="line">&lt;h4&gt;圆角边框&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;h3&gt;新增样式&lt;/h3&gt;</span><br><span class="line">&lt;h4&gt;圆角边框&lt;/h4&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>border-radius: 00px 后面的数值表示圆角的半径<br>圆形 50% 表示宽度的一半<br>圆角矩形 设置成高度的一半<br>一共有四个数值 从左上角开始顺时针设置</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h4&gt;盒子阴影&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;h4&gt;盒子阴影&lt;/h4&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>box-shadow<br>属性: h-shadow 水平阴影<br>     v-shadow 垂直阴影<br>     blur 模糊程度<br>     spread 影子大小<br>     color 影子颜色<br>     inset 将外部阴影设置成内部阴影</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h4&gt;文字阴影&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;h4&gt;文字阴影&lt;/h4&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>text-shadow<br>属性: h-shadow 水平阴影<br>     v-shadow 垂直阴影<br>     blur 模糊程度<br>     color 影子颜色</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h3&gt;CSS浮动&lt;/h3&gt;</span><br><span class="line">&lt;p&gt;应用于网页布局方式&lt;/p&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">.b li &#123;</span><br><span class="line">        list-style: none;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;ul class=&quot;b&quot;&gt;</span><br><span class="line">    &lt;li&gt;1.标准流（普通流）&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;2.浮动&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;3.定位&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">&lt;h4&gt;浮动&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line"></span><br><span class="line">&lt;h2&gt;CSS浮动&lt;/h2&gt;</span><br><span class="line">&lt;p&gt;应用于网页布局方式&lt;/p&gt;</span><br><span class="line">&lt;style&gt;</span><br><span class="line">.b li &#123;</span><br><span class="line">        list-style: none;</span><br><span class="line">&#125;</span><br><span class="line">&lt;/style&gt;</span><br><span class="line">&lt;ul class=&quot;b&quot;&gt;</span><br><span class="line">    &lt;li&gt;1.标准流（普通流）&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;2.浮动&lt;/li&gt;</span><br><span class="line">    &lt;li&gt;3.定位&lt;/li&gt;</span><br><span class="line">&lt;/ul&gt;</span><br><span class="line"></span><br><span class="line">&lt;h4&gt;浮动&lt;/h4&gt;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>第一要素：多个网页元素竖向排列找标准流，横向排列找浮动<br>        float: none left right<br>浮动特性：1.浮动会脱离标准流的控制;浮动的盒子不再保留原来的位置;基于上述两点特性，可以实现重叠效果<br>        2.所有浮动元素一行显示，顶端对齐，中间不会有缝隙，父元素装不下浮动元素时会另起一行显示<br>        3.添加浮动后，元素具有行内块的特点<br>浮动和标准流搭配使用：准备标准流的父盒子，在之中防止浮动的子盒子</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h4&gt;清除浮动&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;h4&gt;清除浮动&lt;/h4&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>为什么： 父盒子没有高度，子盒子浮动了，影响力后面的标准流布局<br>清除浮动的本质：清除浮动元素造成的影响，此时父盒子会根据子盒子自检，计算出高度<br>方法：闭合浮动<br>    1.额外标签法 在最后一个浮动处增加一个标签把父元素 clear: both; 只有块级元素可用，行内元素失效<br>    2.父亲添加 overflow 属性 hidden、auto、scroll<br>    3.父亲添加 after 伪元素 网上复制<br>    4.父亲添加  双伪元素 网上复制</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h3&gt;CSS定位&lt;/h3&gt;</span><br><span class="line">让某个盒子移动或固定到某个位置</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;h2&gt;CSS定位&lt;/h2&gt;</span><br><span class="line">让某个盒子移动或固定到某个位置</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>定位组成：定位模式 + 边偏移</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h4&gt;定位模式&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;h4&gt;定位模式&lt;/h4&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>position: static relative absolute fixed</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h4&gt;边偏移&lt;/h4&gt;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;h4&gt;边偏移&lt;/h4&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p>属性 top、bottom、left、right<br>距离父元素某条边线的距离</p>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;h4&gt;静态定位/h4&gt;</span><br></pre></td></tr></table></figure>
-<p>position: static 标准流（默认）<br>position: relative 相对定位，相对于原来的位置；特点：①移动式不脱标<br>                                              ②仍保有原来位置<br>position: absolute 绝对定位，相对于祖先元素位置；①祖先元素没有定位或者祖先元素没有定位，则以浏览器为标准<br>                                           ②如果父元素有定位，以父元素为参考点，且以最近一级带有定位的父亲为参考点<br>                                           ③绝对定位不占有原来的位置，是脱标的</p>
-<pre><code>
-</code></pre>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line"></span><br><span class="line">&lt;h4&gt;静态定位/h4&gt;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<p>position: static 标准流（默认）<br>position: relative 相对定位，相对于原来的位置；特点：①移动式不脱标<br>                                              ②仍保有原来位置<br>position: absolute 绝对定位，相对于祖先元素位置；①祖先元素没有定位或者祖先元素没有定位，则以浏览器为标准<br>                                           ②如果父元素有定位，以父元素为参考点，且以最近一级带有定位的父亲为参考点<br>                                           ③绝对定位不占有原来的位置，是脱标的<br>子元素用绝对定位 父元素用相对定位<br>&#96;&#96;&#96;</p>
 ]]></content>
   </entry>
   <entry>
