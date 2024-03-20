@@ -158,41 +158,11 @@ margin 外边距<br>
 <figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">position: sticky;</span><br><span class="line">特点： ①以浏览器的可视窗口作为参考点</span><br><span class="line">      ②粘性定位占有原先位置</span><br><span class="line">      必须添加top、bottom、left、right其中一个才有效</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
   <entry>
-    <title>html学习笔记</title>
-    <url>/2024/02/01/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
-    <content><![CDATA[<h2>文本格式化标签</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;strong&gt;加粗，&lt;em&gt;倾斜，&lt;del&gt;删除线，&lt;ins&gt;下划线</span><br></pre></td></tr></table></figure>
-<h2>常用标签</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;和&lt;span&gt;,属于一个‘盒子’，用来装内容div,division是分割、分区的意思，span是跨度的意思，div独占一行而span一行可以有多个</span><br></pre></td></tr></table></figure>
-<h2>图像标签</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">写法&lt;img src=&#x27;图像URL&#x27;/&gt;</span><br><span class="line"></span><br><span class="line">属性：alt 替换文本，图片无法显示时的文字，</span><br><span class="line">    title 提示文本，师表放到图像上显示的文字</span><br><span class="line">    width 图像的宽度，以像素为单位</span><br><span class="line">    height 图像高度</span><br><span class="line">    border 给图像设定边框（一般通过CSS设定）</span><br></pre></td></tr></table></figure>
-<h2>超链接标签</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">外部链接</span><br><span class="line"> &lt;a href=&#x27;跳转URL&#x27;&gt;</span><br><span class="line"> 属性：target 目标窗口打开方式，_self 当前窗口打开，_blank 新窗口打开</span><br><span class="line">内部链接</span><br><span class="line"> 属于同一个网站的网页互相访问</span><br><span class="line">空连接</span><br><span class="line"> 使用‘#’代替href的值</span><br><span class="line">下载链接</span><br><span class="line"> gref链接向zip等文件</span><br><span class="line">网页元素链接</span><br><span class="line"> &lt;a href=&quot;https://www.baidu.com&quot;&gt;&lt;img src=&quot;img.jpg&quot;&gt;&lt;/a&gt;</span><br><span class="line"> 实现点击图片跳转百度</span><br><span class="line">锚点链接</span><br><span class="line"> 点击链接快速定位到页面某个位置</span><br><span class="line"> &lt;a href=&quot;#two&quot;&gt;two的位置&lt;/a&gt;</span><br><span class="line"> &lt;h3 id=&quot;two&quot;&gt;跳转到这里&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
-<h2>HTML的注释标签</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--注释--&gt;</span><br></pre></td></tr></table></figure>
-<h2>HTML的特殊字符</h2>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&amp;nbsp 空格;</span><br><span class="line">&amp;lt 小于;   </span><br><span class="line">&amp;gt 大于;</span><br></pre></td></tr></table></figure>
-<h2>表格标签</h2>
-<g>主要作用：显示、展示数据</g>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;table&gt;最大的父标签</span><br><span class="line"> &lt;thead&gt;（存放表格属性）和&lt;tbody&gt;（存放数据主题）划分表格的头部区域和表格的主体部分</span><br><span class="line">  &lt;tr&gt;定义表格中的行，table的子标签</span><br><span class="line">   &lt;td&gt;定义表格中的单元格，tr的子标签</span><br><span class="line">   &lt;th&gt;定义表格的表头，tr的子标签，通常会加粗居中显示</span><br></pre></td></tr></table></figure>
-<h3>表格属性(通常在CSS中设置)</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">align：表格的位置属性，center、left、right</span><br><span class="line">border：规定表格是否有边框，&quot;1&quot;有边框，&quot;&quot;默认值表示无边框</span><br><span class="line">cellpadding 字和边框的距离</span><br><span class="line">cellspacing 单元格和单元格的距离</span><br><span class="line">width 规定表格的宽度</span><br><span class="line">height 规定表格的高度</span><br></pre></td></tr></table></figure>
-<h3>合并单元格</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">rowspan 跨行合并 标签在所有合并单元格的最上面一个单元格中注明</span><br><span class="line">colspan 跨列合并 标签在所有合并单元格的最左边的一个单元格中注明</span><br></pre></td></tr></table></figure>
-<h2>列表标签</h2>
-使用目的：用来布局，整齐简洁
-<h3>无序列表</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父标签&lt;ul&gt;</span><br><span class="line"> 子标签&lt;li&gt;</span><br></pre></td></tr></table></figure>
-<h3>有序列表</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父标签&lt;ol&gt;</span><br><span class="line"> 子标签&lt;li&gt;</span><br></pre></td></tr></table></figure>
-<h3>自定义列表</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一个大标题和几个小标题的形式</span><br><span class="line">父标签&lt;dl&gt;</span><br><span class="line">    子标签&lt;dt&gt;(大标题)</span><br><span class="line">    子标签&lt;dd&gt;(小标题)</span><br></pre></td></tr></table></figure>
-<h2>表单标签</h2>
-由表单域、表单控件和提示信息三部分组成
-<h3>表单域</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;form&gt; 将表单信息送到指定地址</span><br><span class="line">    属性：action=“url”后台地址</span><br><span class="line">         method 方法</span><br><span class="line">         name 表单名字</span><br></pre></td></tr></table></figure>
-<h3>表单控件（元素）</h3>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;input&gt; 输入操作 type属性值不同有不同的操作</span><br><span class="line">  &lt;label&gt;标签（不属于表单但经常与表单搭配使用） 标签中的for和input的id属性相同</span><br><span class="line">&lt;select&gt; 下拉表单元素 属性selected=”selected“表示默认选中</span><br><span class="line">&lt;textarea&gt; 超大型的文本框，用于留言，反馈</span><br><span class="line">    cols 表示一行多少字；</span><br><span class="line">    rows 表示可以写多少行</span><br></pre></td></tr></table></figure>]]></content>
+    <title>Ajax学习笔记</title>
+    <url>/2024/02/01/Ajax%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/Ajax%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<p>.n1 { text-indent &#x3D; 2em }</p>
+<h1>Ajax</h1>
+<p class="n1">Ajax实现无刷新从服务器获取数据</p>]]></content>
   </entry>
   <entry>
     <title>JS学习笔记</title>
@@ -247,7 +217,7 @@ Math、Date、Array、String
 <figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//节点有nodeType（节点类型）、nodeName（节点名称）、nodeValue（节点值）</span></span><br><span class="line">element.<span class="property">parentElement</span>;<span class="comment">//得到离元素最近的父节点</span></span><br><span class="line">element.<span class="property">childNodes</span>;<span class="comment">//得到所有的孩子节点</span></span><br><span class="line">element.<span class="property">children</span>;<span class="comment">//得到所有的子元素节点,非标准但是浏览器支持，兼容性没问题</span></span><br><span class="line">element.<span class="property">firstChild</span>;<span class="comment">//得到第一个的孩子节点</span></span><br><span class="line">element.<span class="property">lastChild</span>;<span class="comment">//得到最后一个的孩子节点</span></span><br><span class="line">element.<span class="property">firstElementChild</span>;<span class="comment">//得到第一个子元素节点，有兼容性问题</span></span><br><span class="line">element.<span class="property">lastElementChild</span>;<span class="comment">//得到最后一个子元素节点，有兼容性问题</span></span><br><span class="line">element.<span class="property">children</span>[<span class="number">0</span>];element.<span class="property">children</span>[length - <span class="number">1</span>];<span class="comment">//得到第一个和最后一个的子元素节点,非标准但是浏览器支持，兼容性没问题</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//兄弟节点</span></span><br><span class="line">element.<span class="property">nextSibling</span>;<span class="comment">//下一个兄弟节点，包含元素节点和文本节点</span></span><br><span class="line">element.<span class="property">previousSibling</span>;<span class="comment">//上一个兄弟节点，包含元素节点和文本节点</span></span><br><span class="line">element.<span class="property">nextElementSibling</span>;<span class="comment">//下一个兄弟节点，仅元素节点</span></span><br><span class="line">element.<span class="property">previousElementSibling</span>;<span class="comment">//上一个兄弟节点，仅元素节点</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//创建节点  用处：实时评论</span></span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">createElement</span>(<span class="string">&#x27;li&#x27;</span>);<span class="comment">//创建元素节点</span></span><br><span class="line">node.<span class="title function_">appendChild</span>(child);<span class="comment">//将创建的节点child放入父节点node中</span></span><br><span class="line"><span class="comment">//node.insertBefore(插入标签,插入位置); 将创建的节点child放入父节点node中</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//删除节点 </span></span><br><span class="line"><span class="comment">//node.removeChild(节点); 删除节点</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//复制节点</span></span><br><span class="line">node.<span class="title function_">cloneNode</span>();<span class="comment">//复制一个节点，括号为空或者是false 只复制标签 括号内为true复制标签和内容</span></span><br></pre></td></tr></table></figure>
 
 <h5>三种动态创建元素的区别</h5>
-<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">document.write()  文档流执行完毕后调用write时会发生页面重绘</span><br><span class="line">element,innerHtml  </span><br><span class="line">document.createElement() </span><br><span class="line">innerHtml在插入大量的标签是比createElement更快 </span><br><span class="line">前提：不要采用拼接，采用数组形式</span><br><span class="line">但是createElement的结构更清晰</span><br></pre></td></tr></table></figure>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="variable language_">document</span>.<span class="title function_">write</span>()  <span class="comment">//文档流执行完毕后调用write时会发生页面重绘</span></span><br><span class="line">element.<span class="property">innerHtml</span>  </span><br><span class="line"><span class="variable language_">document</span>.<span class="title function_">createElement</span>() </span><br><span class="line"><span class="comment">// innerHtml在插入大量的标签是比createElement更快 </span></span><br><span class="line"><span class="comment">// 前提：不要采用拼接，采用数组形式</span></span><br><span class="line"><span class="comment">// 但是createElement的结构更清晰</span></span><br></pre></td></tr></table></figure>
 
 <h2>事件</h2>
 <h3>注册事件</h3>
@@ -276,6 +246,85 @@ Math、Date、Array、String
 浏览器对象模型，提供与浏览器窗口的对象<br>
 构成：window（最大）包含 document、location、navigation、screen、history
 
-<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 页面加载事件 </span></span><br><span class="line"><span class="comment">// load 事件函数可以不用在意DOM文档位置 </span></span><br><span class="line"><span class="comment">// DOMContentLoaded 只用等待DOM标签加载，不用等待所有内容加载完毕就可以执行js操作</span></span><br><span class="line"><span class="comment">//调整窗口事件</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">onreset</span>; </span><br><span class="line"><span class="comment">//window.addEventListener(&#x27;reset&#x27;,function ());//reset 浏览器窗口变化触发</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>]]></content>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">// 页面加载事件 </span></span><br><span class="line"><span class="comment">// load 事件函数可以不用在意DOM文档位置 </span></span><br><span class="line"><span class="comment">// DOMContentLoaded 只用等待DOM标签加载，不用等待所有内容加载完毕就可以执行js操作</span></span><br><span class="line"><span class="comment">//调整窗口事件</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="property">onreset</span>; </span><br><span class="line"><span class="comment">//window.addEventListener(&#x27;reset&#x27;,function ());//reset 浏览器窗口变化触发</span></span><br></pre></td></tr></table></figure>
+
+<h3>定时器</h3>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//回调函数</span></span><br><span class="line"><span class="variable language_">window</span>.<span class="built_in">setTimeout</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;时间到了&#x27;</span>)&#125;,<span class="number">2000</span>);<span class="comment">//在多少毫秒后开始执行，省略默认是0，只调用一次</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//停止定时器</span></span><br><span class="line"><span class="comment">//window.clearTimeout(TimeoutId);</span></span><br><span class="line"></span><br><span class="line"><span class="variable language_">window</span>.<span class="built_in">setInterval</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;时间到了&#x27;</span>)&#125;,<span class="number">2000</span>);<span class="comment">//在多少毫秒之后调用函数，反复执行</span></span><br><span class="line"><span class="comment">////window.clearInterva(Interval);</span></span><br><span class="line"><span class="comment">//可以当作计时器</span></span><br></pre></td></tr></table></figure>
+
+<h3>JS执行机制</h3>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//JS是单线程的，所以允许JS创建多线程</span></span><br><span class="line"><span class="comment">//出现了同步和异步</span></span><br><span class="line"><span class="comment">//同步任务 执行栈</span></span><br><span class="line"><span class="comment">//异步任务：普通事件、资源加载、回调函数、定时器</span></span><br><span class="line"><span class="comment">//先同步任务，后异步任务</span></span><br><span class="line"><span class="comment">//事件循环</span></span><br></pre></td></tr></table></figure>
+
+<h3>location对象</h3>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">location.<span class="property">href</span>;<span class="comment">//获取当前页面的URL</span></span><br><span class="line">location.<span class="property">search</span>;<span class="comment">//获取当前页面的URL的提交数据</span></span><br><span class="line">location.<span class="title function_">assign</span>(<span class="string">&#x27;https://www.baidu.com&#x27;</span>);<span class="comment">//跳转页面，但可以后退，记录浏览历史</span></span><br><span class="line">location.<span class="title function_">replace</span>(<span class="string">&#x27;https://www.baidu.com&#x27;</span>);<span class="comment">//跳转页面，但无法后退</span></span><br><span class="line">location.<span class="title function_">reload</span>();<span class="comment">//没有参数默认刷新，有参数true强制刷新，从服务器重新获取数据</span></span><br></pre></td></tr></table></figure>
+<h3>navigate对象</h3>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//包含浏览器信息</span></span><br><span class="line"><span class="comment">//navigator.userAgent.match();//用来实现判断手机端或者PC端</span></span><br></pre></td></tr></table></figure>
+
+<h3>history对象</h3>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line">history.<span class="title function_">forward</span>();<span class="comment">//向前跳转，浏览器历史记录</span></span><br><span class="line">history.<span class="title function_">back</span>();<span class="comment">//向后跳转，浏览器历史记录返回</span></span><br><span class="line">history.<span class="title function_">go</span>(<span class="number">1</span>);<span class="comment">//1 向前跳转一步 -1 向后跳转1步</span></span><br></pre></td></tr></table></figure>
+
+<h2>网页元素特效</h2>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//offset系列 </span></span><br><span class="line"><span class="comment">//得到盒子自身所在位置  以带有定位的父亲为准</span></span><br><span class="line"><span class="comment">//可以得到盒子的宽度、高度 包含padding+border</span></span><br><span class="line"><span class="comment">//可以返回带有定位的父亲，否则返回body</span></span><br><span class="line"><span class="comment">//获取元素用offset 改变元素用style</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//client系列</span></span><br><span class="line"><span class="comment">//返回元素的边框大小、元素大小，但是大小不包括边框</span></span><br><span class="line"><span class="comment">//获取元素大小</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//scroll系列</span></span><br><span class="line"><span class="comment">//动态得到元素大小、滚动距离</span></span><br><span class="line"><span class="comment">//真正的内容大小，当内容超出盒子大小时</span></span><br><span class="line"><span class="comment">//scroll 滚动事件</span></span><br><span class="line"><span class="comment">//scollTop 视线框上边框下沿到盒子顶部的距离</span></span><br><span class="line"><span class="comment">//获取元素滚动距离</span></span><br></pre></td></tr></table></figure>
+
+<h2>立即执行函数</h2>
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//可以避免命名冲突的问题</span></span><br><span class="line"><span class="comment">//写法一 不用调用立刻执行</span></span><br><span class="line">(<span class="keyword">function</span> (<span class="params"></span>)&#123;</span><br><span class="line">    <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;111&#x27;</span>);</span><br><span class="line">&#125;)() ;<span class="comment">//第二个小括号可以看作调用函数</span></span><br><span class="line"><span class="comment">//写法二</span></span><br><span class="line">    ((<span class="keyword">function</span> (<span class="params"></span>)&#123;</span><br><span class="line">        <span class="variable language_">console</span>.<span class="title function_">log</span>(<span class="string">&#x27;111&#x27;</span>);&#125;));</span><br></pre></td></tr></table></figure>
+
+<h2>mouseenter和mouseover的区别</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">mouseover 经过自身盒子会触发，经过子盒子也会触发</span><br><span class="line">mouseenter 经过自身盒子和子盒子都会触发，会冒泡</span><br><span class="line">mouseleave 和mouseenter相对于，也不会冒泡</span><br></pre></td></tr></table></figure>
+
+<h2>JS动画</h2>
+基本原理：使用定时器实现移动效果<br>
+动画元素需要定位<br>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//一个简单的移动动画</span></span><br><span class="line"><span class="keyword">var</span> div = <span class="variable language_">document</span>.<span class="title function_">querySelector</span>(<span class="string">&#x27;div&#x27;</span>);</span><br><span class="line"><span class="variable language_">window</span>.<span class="built_in">setInterval</span>(<span class="keyword">function</span> (<span class="params"></span>) &#123;</span><br><span class="line">    div.<span class="property">style</span>.<span class="property">left</span> = div.<span class="property">offsetLeft</span> + <span class="number">5</span> + <span class="string">&#x27;px&#x27;</span></span><br><span class="line">&#125;,<span class="number">30</span>)</span><br></pre></td></tr></table></figure>
+
+<h2>本地存储</h2>
+前端有时候也需要存储数据
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//window.sessionStorage;</span></span><br><span class="line"><span class="comment">//生命周期为关闭浏览器窗口</span></span><br><span class="line"><span class="comment">//在同一个窗口下数据共享</span></span><br><span class="line"><span class="comment">//以键值对的形式存储使用</span></span><br><span class="line"><span class="variable language_">sessionStorage</span>.<span class="title function_">setItem</span>(<span class="string">&#x27;key&#x27;</span>,value);<span class="comment">//存储内容</span></span><br><span class="line"><span class="variable language_">sessionStorage</span>.<span class="title function_">getItem</span>(key);<span class="comment">//获取数据</span></span><br><span class="line"><span class="variable language_">sessionStorage</span>.<span class="title function_">removeItem</span>(key);<span class="comment">//删除数据</span></span><br><span class="line"><span class="variable language_">sessionStorage</span>.<span class="title function_">clear</span>();<span class="comment">//清除所有数据</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//window.localStorage</span></span><br><span class="line"><span class="comment">//生命周期永久生效</span></span><br><span class="line"><span class="comment">//多窗口共享，同一浏览器下</span></span><br><span class="line"><span class="variable language_">localStorage</span>.<span class="title function_">setItem</span>(<span class="string">&#x27;key&#x27;</span>,value);<span class="comment">//存储内容</span></span><br><span class="line"><span class="variable language_">localStorage</span>.<span class="title function_">getItem</span>(key);<span class="comment">//获取数据</span></span><br><span class="line"><span class="variable language_">localStorage</span>.<span class="title function_">removeItem</span>(key);<span class="comment">//删除数据</span></span><br><span class="line"><span class="variable language_">localStorage</span>.<span class="title function_">clear</span>();<span class="comment">//清除所有数据</span></span><br></pre></td></tr></table></figure>
+
+<h2>JQuery</h2>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//顶级对象$ 用$代替JQuery</span></span><br><span class="line"><span class="comment">//DOM对象：用原生方式获取  JQuery：用JQuery方式获取，本质是以伪数组形式获取</span></span><br><span class="line"><span class="comment">//JQuery和DOM互相转换</span></span><br><span class="line">$(<span class="string">&#x27;video&#x27;</span>)[<span class="number">0</span>].<span class="title function_">play</span>();</span><br><span class="line">$(<span class="string">&#x27;video&#x27;</span>).<span class="title function_">get</span>(<span class="number">0</span>).<span class="title function_">play</span>();</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$(<span class="string">&#x27;div&#x27;</span>).<span class="title function_">hide</span>();<span class="comment">//JQuery方法，隐藏块</span></span><br></pre></td></tr></table></figure>
+
+<h3>JQuery常用API</h3>
+
+<figure class="highlight javascript"><table><tr><td class="code"><pre><span class="line"><span class="comment">//jQuery选择器</span></span><br><span class="line"><span class="comment">//$(&#x27;...&#x27;),,</span></span><br></pre></td></tr></table></figure>]]></content>
+  </entry>
+  <entry>
+    <title>html学习笔记</title>
+    <url>/2024/02/01/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/html%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/</url>
+    <content><![CDATA[<h2>文本格式化标签</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;strong&gt;加粗，&lt;em&gt;倾斜，&lt;del&gt;删除线，&lt;ins&gt;下划线</span><br></pre></td></tr></table></figure>
+<h2>常用标签</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;div&gt;和&lt;span&gt;,属于一个‘盒子’，用来装内容div,division是分割、分区的意思，span是跨度的意思，div独占一行而span一行可以有多个</span><br></pre></td></tr></table></figure>
+<h2>图像标签</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">写法&lt;img src=&#x27;图像URL&#x27;/&gt;</span><br><span class="line"></span><br><span class="line">属性：alt 替换文本，图片无法显示时的文字，</span><br><span class="line">    title 提示文本，师表放到图像上显示的文字</span><br><span class="line">    width 图像的宽度，以像素为单位</span><br><span class="line">    height 图像高度</span><br><span class="line">    border 给图像设定边框（一般通过CSS设定）</span><br></pre></td></tr></table></figure>
+<h2>超链接标签</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">外部链接</span><br><span class="line"> &lt;a href=&#x27;跳转URL&#x27;&gt;</span><br><span class="line"> 属性：target 目标窗口打开方式，_self 当前窗口打开，_blank 新窗口打开</span><br><span class="line">内部链接</span><br><span class="line"> 属于同一个网站的网页互相访问</span><br><span class="line">空连接</span><br><span class="line"> 使用‘#’代替href的值</span><br><span class="line">下载链接</span><br><span class="line"> gref链接向zip等文件</span><br><span class="line">网页元素链接</span><br><span class="line"> &lt;a href=&quot;https://www.baidu.com&quot;&gt;&lt;img src=&quot;img.jpg&quot;&gt;&lt;/a&gt;</span><br><span class="line"> 实现点击图片跳转百度</span><br><span class="line">锚点链接</span><br><span class="line"> 点击链接快速定位到页面某个位置</span><br><span class="line"> &lt;a href=&quot;#two&quot;&gt;two的位置&lt;/a&gt;</span><br><span class="line"> &lt;h3 id=&quot;two&quot;&gt;跳转到这里&lt;/h3&gt;</span><br></pre></td></tr></table></figure>
+<h2>HTML的注释标签</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;!--注释--&gt;</span><br></pre></td></tr></table></figure>
+<h2>HTML的特殊字符</h2>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&amp;nbsp 空格;</span><br><span class="line">&amp;lt 小于;   </span><br><span class="line">&amp;gt 大于;</span><br></pre></td></tr></table></figure>
+<h2>表格标签</h2>
+<g>主要作用：显示、展示数据</g>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;table&gt;最大的父标签</span><br><span class="line"> &lt;thead&gt;（存放表格属性）和&lt;tbody&gt;（存放数据主题）划分表格的头部区域和表格的主体部分</span><br><span class="line">  &lt;tr&gt;定义表格中的行，table的子标签</span><br><span class="line">   &lt;td&gt;定义表格中的单元格，tr的子标签</span><br><span class="line">   &lt;th&gt;定义表格的表头，tr的子标签，通常会加粗居中显示</span><br></pre></td></tr></table></figure>
+<h3>表格属性(通常在CSS中设置)</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">align：表格的位置属性，center、left、right</span><br><span class="line">border：规定表格是否有边框，&quot;1&quot;有边框，&quot;&quot;默认值表示无边框</span><br><span class="line">cellpadding 字和边框的距离</span><br><span class="line">cellspacing 单元格和单元格的距离</span><br><span class="line">width 规定表格的宽度</span><br><span class="line">height 规定表格的高度</span><br></pre></td></tr></table></figure>
+<h3>合并单元格</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">rowspan 跨行合并 标签在所有合并单元格的最上面一个单元格中注明</span><br><span class="line">colspan 跨列合并 标签在所有合并单元格的最左边的一个单元格中注明</span><br></pre></td></tr></table></figure>
+<h2>列表标签</h2>
+使用目的：用来布局，整齐简洁
+<h3>无序列表</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父标签&lt;ul&gt;</span><br><span class="line"> 子标签&lt;li&gt;</span><br></pre></td></tr></table></figure>
+<h3>有序列表</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">父标签&lt;ol&gt;</span><br><span class="line"> 子标签&lt;li&gt;</span><br></pre></td></tr></table></figure>
+<h3>自定义列表</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">一个大标题和几个小标题的形式</span><br><span class="line">父标签&lt;dl&gt;</span><br><span class="line">    子标签&lt;dt&gt;(大标题)</span><br><span class="line">    子标签&lt;dd&gt;(小标题)</span><br></pre></td></tr></table></figure>
+<h2>表单标签</h2>
+由表单域、表单控件和提示信息三部分组成
+<h3>表单域</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;form&gt; 将表单信息送到指定地址</span><br><span class="line">    属性：action=“url”后台地址</span><br><span class="line">         method 方法</span><br><span class="line">         name 表单名字</span><br></pre></td></tr></table></figure>
+<h3>表单控件（元素）</h3>
+<figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">&lt;input&gt; 输入操作 type属性值不同有不同的操作</span><br><span class="line">  &lt;label&gt;标签（不属于表单但经常与表单搭配使用） 标签中的for和input的id属性相同</span><br><span class="line">&lt;select&gt; 下拉表单元素 属性selected=”selected“表示默认选中</span><br><span class="line">&lt;textarea&gt; 超大型的文本框，用于留言，反馈</span><br><span class="line">    cols 表示一行多少字；</span><br><span class="line">    rows 表示可以写多少行</span><br></pre></td></tr></table></figure>]]></content>
   </entry>
 </search>
